@@ -61,6 +61,9 @@ app.post("/send-email", async (req, res) => {
   }
 });
 
+app.get("/" , (req,res) => {
+  res.redirect("/home");
+});
 
 app.listen(port, () => {
     console.log(`App is listening to port ${port}`);
